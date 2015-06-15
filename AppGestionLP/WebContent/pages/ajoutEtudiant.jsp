@@ -68,13 +68,13 @@
                             <a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
 						<li>
-                            <a href="listeEtudiant.jsp"><i class="fa fa-list-alt  fa-fw"></i>Liste des étudiants</a>
+                            <a href="listeEtudiant.jsp"><i class="fa fa-list-alt  fa-fw"></i>Liste des etudiants</a>
                         </li>
 						<li>
-                            <a href="ajoutEtudiant.jsp"><i class="fa fa-user fa-fw"></i>Ajout d'étudiant</a>
+                            <a href="ajoutEtudiant.jsp"><i class="fa fa-user fa-fw"></i>Ajout d'etudiant</a>
                         </li>
                         <li>
-                            <a href="rechercheEtudiants.jsp"><i class="fa fa-users fa-fw"></i>Recherche d'étudiant</a>
+                            <a href="rechercheEtudiants.jsp"><i class="fa fa-users fa-fw"></i>Recherche d'etudiant</a>
                         </li>
                         
                     </ul>
@@ -87,7 +87,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Ajout d'un étudiant</h1>
+                    <h1 class="page-header">Ajout d'un etudiant</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -99,37 +99,37 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <form role="form">
+                                    <form action="inscription_etudiant" method="post">
                                         <div class="form-group">
                                             <label>CIN</label>
-                                            <input class="form-control" >
+                                            <input class="form-control" name="cin">
                                         </div>
 										<div class="form-group">
                                             <label>CNE</label>
-                                            <input class="form-control" >
+                                            <input class="form-control" name="cin">
                                         </div>
 										<div class="form-group">
                                             <label>Nom</label>
-                                            <input class="form-control" >
+                                            <input class="form-control" name="nom">
                                         </div>
 										<div class="form-group">
                                             <label>Prenom</label>
-                                            <input class="form-control" >
+                                            <input class="form-control" name="prenom">
                                         </div>
 										<div class="form-group">
                                             <label>Numero de Telephone</label>
-                                            <input class="form-control">
+                                            <input class="form-control" name="tel">
                                         </div>
 										
-										<label>Numero de Telephone</label>
+										<label>Mail</label>
                                         <div class="form-group input-group">
                                             <span class="input-group-addon">@</span>
-                                            <input type="text" class="form-control" placeholder="Entrer votre mail">
+                                            <input type="text" class="form-control" placeholder="Entrer votre mail" name="mail">
                                         </div>
 
 										<div class="form-group">
-                                            <label>Selects</label>
-                                            <select class="form-control">
+                                            <label>Diplome</label>
+                                            <select class="form-control" name="diplome">
                                                 <option>DTS</option>
                                                 <option>BTS</option>
                                                 <option>DEUG</option>
@@ -137,12 +137,12 @@
                                             </select>
                                         </div>
 										<div class="form-group">
-                                            <label>Spécialité</label>
-                                            <input class="form-control" >
+                                            <label>Specialite</label>
+                                            <input class="form-control" name="specialite" >
                                         </div>
 										<label>La moyenne</label>
 										<div class="form-group input-group">
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="moyenne">
                                             <span class="input-group-addon">/20</span>
                                         </div>
                                         <button type="submit" class="btn btn-default">Valider</button>
