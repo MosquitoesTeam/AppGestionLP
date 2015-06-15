@@ -106,7 +106,7 @@
                                         </div>
 										<div class="form-group">
                                             <label>CNE</label>
-                                            <input class="form-control" name="cne">
+                                            <input class="form-control" name="cin">
                                         </div>
 										<div class="form-group">
                                             <label>Nom</label>
@@ -145,7 +145,8 @@
                                             <input type="text" class="form-control" name="moyenne">
                                             <span class="input-group-addon">/20</span>
                                         </div>
-                                        <input type= "submit" class="btn btn-default" value="Valider" />
+<!--                                         <input type="submit" class="btn btn-default" name="validate">Valider</input> -->
+                                        <input type= "submit" value="Valider" >
                                         <button type="reset" class="btn btn-default">Annuler</button>
 										
                                     </form>
