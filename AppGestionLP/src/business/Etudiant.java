@@ -4,41 +4,54 @@ import java.io.Serializable;
 
 public class Etudiant implements Serializable {
 	
+	private String cin;
+	private String cne;
+	public String getCne() {
+		return cne;
+	}
+
+	public void setCne(String cne) {
+		this.cne = cne;
+	}
 	private String nom;
 	private String prenom;
-	private String cin;
 	private String mail;
+	private String tel;
 	private String diplome;
 	private String specialite;
 	private Float moyenne;
-	private String tel;
+	
 	
 	
 	
 	public Etudiant() {
+		this.cin = "";
+		this.cne = "";
 		this.nom = "";
 		this.prenom = "";
-		this.cin = "";
+		this.tel = "";
 		this.mail = "";
 		this.diplome = "";
 		this.specialite = "";
 		this.moyenne = new Float(0);
-		this.tel = "";
 	}
 	
 	public String toString(){
 		return "==>" +nom +", "+ prenom +", "+  cin +", "+  mail +", "+  diplome +", "+  specialite  +", "+  moyenne +", "+  tel;
 	}
-	public Etudiant(String nom, String prenom, String cin, String mail,
-			String diplome, String specialite, Float moyenne, String tel) {
+	public Etudiant(String cin, String cne, String nom, String prenom, String mail, String tel,
+			String diplome, String specialite, Float moyenne) {
+		
+		this.cin = cin;
+		this.cne = cne;
 		this.nom = nom;
 		this.prenom = prenom;
-		this.cin = cin;
+		this.tel = tel;
 		this.mail = mail;
 		this.diplome = diplome;
 		this.specialite = specialite;
 		this.moyenne = moyenne;
-		this.tel = tel;
+		
 	}
 	public String getNom() {
 		return nom;

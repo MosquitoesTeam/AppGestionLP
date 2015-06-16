@@ -12,19 +12,20 @@ public class DBEtudiant {
 	public static int insert(Etudiant etudiant) {
 		Connection con = DBUtil.dbConnect("gestionLP", "root", "");
 		PreparedStatement ps = null;
-		String query = "INSERT INTO etudiant (nom,prenom,cin,mail,diplome,specialite,moyenne,tel)"
-				+ "values (?,?,?,?,?,?,?,?)";
+		String query = "INSERT INTO etudiant (cin, cne, nom, prenom, mail, tel, diplome, specialite, moyenne)"
+				+ "values (? , ?, ?, ?, ?, ?, ?, ?, ?)";
 		try {
 			ps = con.prepareStatement(query);
 			
-			ps.setString(1, etudiant.getNom());
-			ps.setString(2, etudiant.getPrenom());
-			ps.setString(3, etudiant.getCin());
-			ps.setString(4, etudiant.getMail());
-			ps.setString(5, etudiant.getDiplome());
-			ps.setString(6, etudiant.getSpecialite());
-			ps.setFloat(7, etudiant.getMoyenne());
-			ps.setString(8, etudiant.getTel());
+			ps.setString(1, etudiant.getCin());
+			ps.setString(2, etudiant.getCne());
+			ps.setString(3, etudiant.getNom());
+			ps.setString(4, etudiant.getPrenom());
+			ps.setString(5, etudiant.getTel());
+			ps.setString(6, etudiant.getMail());
+			ps.setString(7, etudiant.getDiplome());
+			ps.setString(8, etudiant.getSpecialite());
+			ps.setFloat(9, etudiant.getMoyenne());
 			
 			return ps.executeUpdate();
 			
@@ -109,14 +110,17 @@ public class DBEtudiant {
 			while(rs.next()){
 				
 				etudiant = new Etudiant();
+				
+				etudiant.setCin(rs.getString("cin"));
+				etudiant.setCne(rs.getString("cne"));
 				etudiant.setNom(rs.getString("nom"));
 				etudiant.setPrenom(rs.getString("prenom"));
-				etudiant.setCin(rs.getString("cin"));
 				etudiant.setMail(rs.getString("mail"));
 				etudiant.setTel(rs.getString("tel"));
 				etudiant.setDiplome(rs.getString("diplome"));
 				etudiant.setSpecialite(rs.getString("specialite"));
 				etudiant.setMoyenne(rs.getFloat("moyenne"));
+				
 				liste.add(etudiant);
 			}
 			
@@ -135,21 +139,24 @@ public class DBEtudiant {
 	public static int update(Etudiant etudiant){
 		Connection con = DBUtil.dbConnect("gestionLP", "root", "");
 		PreparedStatement ps = null;
-		String query = "UPDATE etudiant SET NOM=?,PRENOM=?,DIPLOME=?,"
-				+"SPECIALITE=?,MOYENNE=?,MAIL=?,TEL=?" 
+		String query = "UPDATE etudiant SET CNE=?, NOM=?, PRENOM=?, MAIL=?, TEL=?, DIPLOME=?,"
+				+"SPECIALITE=?, MOYENNE=?" 
 						+"WHERE CIN=?";
 		
 		try {
 			ps = con.prepareStatement(query);
 			
-			ps.setString(1, etudiant.getNom());
-			ps.setString(2, etudiant.getPrenom());
-			ps.setString(3, etudiant.getDiplome());
-			ps.setString(4, etudiant.getSpecialite());
-			ps.setFloat(5, etudiant.getMoyenne());
-			ps.setString(6, etudiant.getMail());
-			ps.setString(7, etudiant.getTel());
-			ps.setString(8, etudiant.getCin());
+			
+			ps.setString(1, etudiant.getCne());
+			ps.setString(2, etudiant.getNom());
+			ps.setString(3, etudiant.getPrenom());
+			ps.setString(4, etudiant.getMail());
+			ps.setString(5, etudiant.getTel());
+			ps.setString(6, etudiant.getDiplome());
+			ps.setString(7, etudiant.getSpecialite());
+			ps.setFloat(8, etudiant.getMoyenne());
+
+			ps.setString(9, etudiant.getCin());
 			
 			return ps.executeUpdate();
 			
@@ -209,14 +216,17 @@ public class DBEtudiant {
 			while(rs.next()){
 				
 				etudiant = new Etudiant();
+				
+				etudiant.setCin(rs.getString("cin"));
+				etudiant.setCne(rs.getString("cne"));
 				etudiant.setNom(rs.getString("nom"));
 				etudiant.setPrenom(rs.getString("prenom"));
-				etudiant.setCin(rs.getString("cin"));
 				etudiant.setMail(rs.getString("mail"));
 				etudiant.setTel(rs.getString("tel"));
 				etudiant.setDiplome(rs.getString("diplome"));
 				etudiant.setSpecialite(rs.getString("specialite"));
 				etudiant.setMoyenne(rs.getFloat("moyenne"));
+				
 				liste.add(etudiant);
 			}
 			

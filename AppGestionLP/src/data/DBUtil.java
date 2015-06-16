@@ -33,7 +33,7 @@ public class DBUtil {
 			if(s != null)
 				s.close();
 		} catch(SQLException e) {
-			System.out.println(e);
+			e.printStackTrace();
 		}
 	}
 	
@@ -42,7 +42,7 @@ public class DBUtil {
 			if(ps != null)
 				ps.close();
 		} catch(SQLException e) {
-			System.out.println(e);
+			e.printStackTrace();
 		}
 	}
 	
@@ -51,7 +51,7 @@ public class DBUtil {
 			if(rs != null)
 				rs.close();
 		} catch(SQLException e) {
-			System.out.println(e);
+			e.printStackTrace();
 		}
 	}
 }

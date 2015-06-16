@@ -89,7 +89,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header" >Insertion effectue <i class="fa fa-check-circle-o" style="margin-left: 9px; color: green;"></i></h1> 
+                    <h1 class="page-header" >Insertion echoue <i class="fa fa-times-circle-o" style="margin-left: 9px; color: red;"></i></h1> 
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -102,46 +102,8 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    
-                                        <div class="form-group">
-                                            <label>CIN: </label>
-                                            <%=request.getParameter("cin") %>
-                                        </div>
-										<div class="form-group">
-                                            <label>CNE: </label>
-                                            <%=request.getParameter("cne") %>
-                                        </div>
-										<div class="form-group">
-                                            <label>Nom: </label>
-                                            <%=request.getParameter("nom") %>
-                                        </div>
-										<div class="form-group">
-                                            <label>Prenom: </label>
-                                            <%=request.getParameter("prenom") %>
-                                        </div>
-										<div class="form-group">
-                                            <label>Numero de Telephone: </label>
-                                            <%=request.getParameter("tel") %>
-                                        </div>
-										
-                                        <div class="form-group">
-                                        	<label>Mail: </label>
-                                            <%=request.getParameter("mail") %>
-                                        </div>
-
-										<div class="form-group">
-                                            <label>Diplome: </label>
-											<%=request.getParameter("diplome") %>
-                                        </div>
-										<div class="form-group">
-                                            <label>Specialite: </label>
-                                            <%=request.getParameter("specialite") %>
-                                        </div>
-										<div class="form-group">
-											<label>La moyenne: </label>	
-                                            <%=request.getParameter("moyenne") %>
-                                        </div>
-                                     
+                                    <button type="button" class="btn btn-default"><i class="fa fa-arrow-left"></i></br>Reessayer</button>
+                                    <%=request.getAttribute("action") %>
                                 </div>
 
                                 <!-- /.col-lg-6 (nested) -->
