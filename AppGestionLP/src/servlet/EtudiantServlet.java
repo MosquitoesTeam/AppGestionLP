@@ -40,10 +40,21 @@ public class EtudiantServlet extends HttpServlet {
 		Etudiant etudiant = new Etudiant(cin, cne, nom, prenom, mail, tel, diplome, specialite, moyenne);
 
 		
-		url ="/pages/insertion_ok.jsp";
-		DBEtudiant.insert(etudiant);
+		String url_ok ="/pages/insertion_ok.jsp";
 		
-		getServletContext().getRequestDispatcher(url).forward(request, response);
+		String url_ko ="/pages/insertion_ko.jsp";
+		
+		
+		
+		
+		
+		if (DBEtudiant.insert(etudiant)>0) {
+			getServletContext().getRequestDispatcher(url_ok).forward(request, response);
+		} else {
+			request.setAttribute("action", "just test");
+			getServletContext().getRequestDispatcher(url_ko).forward(request, response);
+		}
+		
 
 		
 	}

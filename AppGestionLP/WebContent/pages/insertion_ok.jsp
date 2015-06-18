@@ -70,7 +70,7 @@
                             <a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
 						<li>
-                            <a href="listeEtudiant.jsp"><i class="fa fa-list-alt  fa-fw"></i>Liste des etudiants</a>
+                            <a href="listeEtudiant"><i class="fa fa-list-alt  fa-fw"></i>Liste des etudiants</a>
                         </li>
 						<li>
                             <a href="ajoutEtudiant.jsp"><i class="fa fa-user fa-fw"></i>Ajout d'etudiant</a>

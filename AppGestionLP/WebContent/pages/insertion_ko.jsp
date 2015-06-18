@@ -102,7 +102,7 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <button type="button" class="btn btn-default"><i class="fa fa-arrow-left"></i></br>Reessayer</button>
+                                    <a href="ajoutEtudiant.jsp" type="button" class="btn btn-default"><i class="fa fa-arrow-left"></i></br>Reessayer</a>
                                     <%=request.getAttribute("action") %>
                                 </div>
 
