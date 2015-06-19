@@ -15,14 +15,14 @@ import business.Etudiant;
 /**
  * Servlet implementation class EtudiantsServlet
  */
-@WebServlet(name="EtudiantsServlet", urlPatterns = { "/pages/listeEtudiant" })
-public class EtudiantsServlet extends HttpServlet {
+@WebServlet(name="ListeEtudiantServlet", urlPatterns = { "/pages/listeEtudiant" })
+public class ListeEtudiantServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public EtudiantsServlet() {
+    public ListeEtudiantServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
