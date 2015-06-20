@@ -71,13 +71,13 @@
                             <a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
 						<li>
-                            <a href="listeEtudiant"><i class="fa fa-list-alt  fa-fw"></i>Liste des etudiants</a>
+                            <a href="listeEtudiant"><i class="fa fa-list-alt  fa-fw"></i>Liste des étudiants</a>
                         </li>
 						<li>
-                            <a href="ajoutEtudiant.jsp"><i class="fa fa-user fa-fw"></i>Ajout d'etudiant</a>
+                            <a href="ajoutEtudiant.jsp"><i class="fa fa-user fa-fw"></i>Ajout d'étudiant</a>
                         </li>
                         <li>
-                            <a href="rechercheEtudiants.jsp"><i class="fa fa-users fa-fw"></i>Recherche d'etudiant</a>
+                            <a href="rechercheEtudiants.jsp"><i class="fa fa-users fa-fw"></i>Recherche d'étudiant</a>
                         </li>
                         
                     </ul>
@@ -91,7 +91,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Liste des etudiants</h1>
+                    <h1 class="page-header">Liste des étudiants</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -120,7 +120,6 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    
                                         <%
 
  
@@ -137,10 +136,12 @@
 	                                            <td><%=liste.get(i).getDiplome() %></td>
 	                                            <td><%=liste.get(i).getSpecialite() %></td>
 	                                            <td><%=liste.get(i).getMoyenne() %></td>
-	                                            <td><a href="modif.jsp"> <i class="fa fa-pencil-square-o fa-lg"></i> </a></td>
+	                                            <td><a href="modif?cin=<%=liste.get(i).getCin() %>">modifier</a> </td>
+	                                            
 	                                        </tr>
                                         	
                                         	<% } %>
+                                        
                                         
                                     </tbody>
                                 </table>
