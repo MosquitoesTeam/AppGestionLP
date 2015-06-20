@@ -72,6 +72,7 @@ public class DBEtudiant {
 				etudiant.setNom(rs.getString("nom"));
 				etudiant.setPrenom(rs.getString("prenom"));
 				etudiant.setCin(rs.getString("cin"));
+				etudiant.setCne(rs.getString("cne"));
 				etudiant.setMail(rs.getString("mail"));
 				etudiant.setTel(rs.getString("tel"));
 				etudiant.setDiplome(rs.getString("diplome"));

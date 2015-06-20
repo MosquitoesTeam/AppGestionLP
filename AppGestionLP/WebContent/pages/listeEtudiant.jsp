@@ -116,6 +116,7 @@
                                             <th>DIPLOME</th>
                                             <th>SPECIALITE</th>
                                             <th>MOYENNE</th>
+                                            <th>ACTION</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -135,6 +136,8 @@
 	                                            <td><%=liste.get(i).getDiplome() %></td>
 	                                            <td><%=liste.get(i).getSpecialite() %></td>
 	                                            <td><%=liste.get(i).getMoyenne() %></td>
+	                                            <td><a href="modif?cin=<%=liste.get(i).getCin() %>">modifier</a> </td>
+	                                            
 	                                        </tr>
                                         	
                                         	<% } %>

@@ -23,17 +23,16 @@ public class Test {
 		
 		//DBEtudiant.delete(DBEtudiant.selectEtudiant("BK201650"));
 		
-//		Etudiant e = DBEtudiant.selectEtudiant("BHDDFE");
-//		e.setDiplome("DUT");
+Etudiant e = DBEtudiant.selectEtudiant("NH370207");
+e.setDiplome("DUT");
+DBEtudiant.update(e);
 		
-		//DBEtudiant.update(e);
-		
-		ArrayList<Etudiant> liste = DBEtudiant.selectToutEtudiants();
-		
-		for (int i = 0; i < liste.size(); i++) {
-			System.out.println(liste.get(i).toString());
-			
-		}
+//		ArrayList<Etudiant> liste = DBEtudiant.selectToutEtudiants();
+//		
+//		for (int i = 0; i < liste.size(); i++) {
+//			System.out.println(liste.get(i).toString());
+//			
+//		}
 		
 //		String[][] liste = DBEtudiant.selectParDiplome();
 //		

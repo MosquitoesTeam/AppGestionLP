@@ -6,13 +6,6 @@ public class Etudiant implements Serializable {
 	
 	private String cin;
 	private String cne;
-	public String getCne() {
-		return cne;
-	}
-
-	public void setCne(String cne) {
-		this.cne = cne;
-	}
 	private String nom;
 	private String prenom;
 	private String mail;
@@ -21,38 +14,6 @@ public class Etudiant implements Serializable {
 	private String specialite;
 	private Float moyenne;
 	
-	
-	
-	
-	public Etudiant() {
-		this.cin = "";
-		this.cne = "";
-		this.nom = "";
-		this.prenom = "";
-		this.tel = "";
-		this.mail = "";
-		this.diplome = "";
-		this.specialite = "";
-		this.moyenne = new Float(0);
-	}
-	
-	public String toString(){
-		return "==>" +nom +", "+ prenom +", "+  cin +", "+  mail +", "+  diplome +", "+  specialite  +", "+  moyenne +", "+  tel;
-	}
-	public Etudiant(String cin, String cne, String nom, String prenom, String mail, String tel,
-			String diplome, String specialite, Float moyenne) {
-		
-		this.cin = cin;
-		this.cne = cne;
-		this.nom = nom;
-		this.prenom = prenom;
-		this.tel = tel;
-		this.mail = mail;
-		this.diplome = diplome;
-		this.specialite = specialite;
-		this.moyenne = moyenne;
-		
-	}
 	public String getNom() {
 		return nom;
 	}
@@ -70,6 +31,13 @@ public class Etudiant implements Serializable {
 	}
 	public void setCin(String cin) {
 		this.cin = cin;
+	}
+	public String getCne() {
+		return cne;
+	}
+
+	public void setCne(String cne) {
+		this.cne = cne;
 	}
 	public String getMail() {
 		return mail;
@@ -100,6 +68,38 @@ public class Etudiant implements Serializable {
 	}
 	public void setTel(String tel) {
 		this.tel = tel;
+	}
+	
+	public Etudiant() {
+		this.cin = "";
+		this.cne = "";
+		this.nom = "";
+		this.prenom = "";
+		this.tel = "";
+		this.mail = "";
+		this.diplome = "";
+		this.specialite = "";
+		this.moyenne = new Float(0);
+	}
+	
+	
+	public Etudiant(String cin, String cne, String nom, String prenom, String mail, String tel,
+			String diplome, String specialite, Float moyenne) {
+		
+		this.cin = cin;
+		this.cne = cne;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.tel = tel;
+		this.mail = mail;
+		this.diplome = diplome;
+		this.specialite = specialite;
+		this.moyenne = moyenne;
+		
+	}
+	
+	public String toString(){
+		return "==>" +nom +", "+ prenom +", "+  cin +", "+  cne +", "+  mail +", "+  diplome +", "+  specialite  +", "+  moyenne +", "+  tel;
 	}
 	
 }
