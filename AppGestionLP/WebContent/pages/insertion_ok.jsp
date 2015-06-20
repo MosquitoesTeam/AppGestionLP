@@ -75,7 +75,7 @@
 						<li>
                             <a href="ajoutEtudiant.jsp"><i class="fa fa-user fa-fw"></i>Ajout d'etudiant</a>
                         </li>
-                        <li>
+                       <li>
                             <a href="rechercheEtudiants.jsp"><i class="fa fa-users fa-fw"></i>Recherche d'etudiant</a>
                         </li>
                         

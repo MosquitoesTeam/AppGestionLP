@@ -2,3 +2,5 @@
 /data/
 /pack/
 /servlet/
+/testPackage/
+/.gitignore

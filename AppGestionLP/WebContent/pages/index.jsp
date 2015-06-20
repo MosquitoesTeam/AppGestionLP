@@ -69,13 +69,13 @@
                             <a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
 						<li>
-                            <a href="listeEtudiant"><i class="fa fa-list-alt  fa-fw"></i>Liste des étudiants</a>
+                            <a href="listeEtudiant"><i class="fa fa-list-alt  fa-fw"></i>Liste des etudiants</a>
                         </li>
 						<li>
-                            <a href="ajoutEtudiant.jsp"><i class="fa fa-user fa-fw"></i>Ajout d'étudiant</a>
+                            <a href="ajoutEtudiant.jsp"><i class="fa fa-user fa-fw"></i>Ajout d'etudiant</a>
                         </li>
                         <li>
-                            <a href="rechercheEtudiants.jsp"><i class="fa fa-users fa-fw"></i>Recherche d'étudiant</a>
+                            <a href="selectSup12Etudiant.jsp"><i class="fa fa-users fa-fw"></i>Selection des etudiants</a>
                         </li>
                         
                     </ul>
@@ -99,7 +99,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Nombre d'étudiants par diplome
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Nombre d'etudiants par diplome
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">

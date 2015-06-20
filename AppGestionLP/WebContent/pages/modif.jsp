@@ -68,12 +68,12 @@
                             <a href="index.jsp"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
 						<li>
-                            <a href="listeEtudiant"><i class="fa fa-list-alt  fa-fw"></i>Liste des etudiants</a>
+                            <a href="listeEtudiant"><i class="fa fa-list-alt fa-fw"></i>Liste des etudiants</a>
                         </li>
 						<li>
                             <a href="ajoutEtudiant.jsp"><i class="fa fa-user fa-fw"></i>Ajout d'etudiant</a>
                         </li>
-                        <li>
+                       <li>
                             <a href="rechercheEtudiants.jsp"><i class="fa fa-users fa-fw"></i>Recherche d'etudiant</a>
                         </li>
                         
